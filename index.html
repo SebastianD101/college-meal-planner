@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Purdue Meal Planner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+</head>
+<div id="square"></div>
+<script src="script.js"></script>
+<body onload="myFunction()">
+    <br>
+    <center><h1 id="id1">Purdue Meal Planner</h1></center>
+<div class="area">
+    <br>
+    <center>
+        <b>Meal Swipes Used:</b>
+        &#8205;
+        &#8205; 
+        &#8205; 
+        <input type="text" id="swipes" value="0"><br>
+        <b>Dining Dollars Used:</b>
+        <input type="text" id="dollars" value="0"><br>
+        <b>Boiler Express Used:</b>
+        <input type="text" id="boiler" value="0"><br>
+    </center>
+    <br><br>
+    <center>
+        <table style="width:90%">
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b1" onchange="b1Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="b1check1" style="display: none;">
+                        <a id="b1text1" style="display: none;">Carryout</a>
+                        <input id="b1check2" type="checkbox" style="display: none;">
+                        <a id="b1text2" style="display: none;">On-the-GO!</a>
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b2">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b3">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b4">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b5">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b6">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b7">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l1">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l2">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l3">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l4">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l5">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l6">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l7">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d1">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d2">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d3">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d4">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d5">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d6">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d7">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Wiley">Wiley</option>
+                        <option value="Hillenbrand">Hillenbrand</option>
+                        <option value="Earhart">Earhart</option>
+                        <option value="Windsor">Windsor</option>
+                        <option value="Sushi Boss">Sushi Boss</option>
+                        <option value="1Bowl">1Bowl</option>
+                        <option value="Pete's Za">Pete's Za</option>
+                        <option value="Lawson On-the-GO!">Lawson On-the-GO!</option>
+                        <option value="Famous Frank's">Famous Franks</option>
+                        <option value="Jersey Mikes">Jersey Mike's</option>
+                        <option value="Cosi">Cosi</option>
+                        <option value="Harrison Grill">Harrison Grill</option>
+                        <option value="Qdoba">Qdoba</option>
+                        <option value="Panera Bread">Panera Bread</option>
+                        <option value="Chick-Fil-A">Chick-Fil-A</option>
+                        <option value="Boiler Bistro">Boiler Bistro</option>
+                        <option value="Freshens">Freshens</option>
+                        <option value="Amelia's">Amelia's</option>
+                        <option value="3rd Street Market">3rd Street Market</option>
+                        <option value="Saladworks">Saladworks</option>
+                        <option value="Au Bon Pain">Au Bon Pain</option>
+                        <option value="Catalyst Cafe">Catalyst Cafe</option>
+                        <option value="The Bistro">The Bistro</option>
+                        <option value="Continuum Cafe">Continuum Cafe</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </td>
+            </tr>
+          </table>
+          <br>
+          <button onClick="window.print()">Save as a PDF</button>
+    </center>
+</div>
+<script>
+</script>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</html>

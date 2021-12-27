@@ -12,8 +12,8 @@ button {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 12px;
     border-width: 5px;
-    color: #13294B;
-    border-color: #e84a2798;
+    color: #000;
+    border-color: #ceb88893;
     font-size: large;
 }
 
@@ -47,7 +47,6 @@ select {
 }
 
 .college {
-    text-align: center;
     width: 20%;
     background-color: transparent;
     color: white;
@@ -63,8 +62,8 @@ select {
 }
 
 .bg {
-    animation:slide 30s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #13294B 50%, #E84A27 50%);
+    animation:slide 45s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #CEB888 50%, #000 50%);
     bottom:0;
     left:-50%;
     opacity:.9;

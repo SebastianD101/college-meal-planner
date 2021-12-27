@@ -5,6 +5,9 @@ function collegeChanged() {
     if (event.target.value == "UIUC") {
         window.location.href = "uiuc.html";
     } 
+    if (event.target.value == "UCLA") {
+        window.location.href = "ucla.html";
+    } 
 }
 
 function b1Changed() {

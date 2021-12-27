@@ -1,3 +1,12 @@
+function collegeChanged() {
+    if (event.target.value == "Purdue") {
+        window.location.href = "index.html";
+    } 
+    if (event.target.value == "UIUC") {
+        window.location.href = "uiuc.html";
+    } 
+}
+
 function b1Changed() {
     if (event.target.value == "Ford") {
         document.getElementById("b1Carryout").style.display = "block";

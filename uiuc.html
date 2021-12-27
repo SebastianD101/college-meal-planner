@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UIUC Meal Planner</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uiucStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+</head>
+<div id="square"></div>
+<script src="script.js"></script>
+<body>
+    <br>
+    <center>
+        <select class="college" onchange="collegeChanged();">
+            <option value="UIUC" style="color: #E84A27; background-color: #13294B;">UIUC</option>
+            <option value="Purdue" style="color: #CEB888; background-color: #000;">Purdue</option>
+        </select>
+        <h1 id="id1">Meal Planner</h1>
+
+    </center>
+<div class="area">
+    <br>
+    <center>
+        <b>Meal Swipes Used:</b>
+        &#8205;
+        &#8205; 
+        &#8205; 
+        &#8205; 
+        <input type="text" id="swipes" value="0"><br>
+        <b>Dining Dollars Used:</b>
+        <input type="text" id="dollars" value="0"><br>
+        <b>Illini Cash Used:</b>
+        &#8205;
+        &#8205; 
+        &#8205; 
+        &#8205;
+        &#8205; 
+        &#8205;
+        &#8205;  
+        <input type="text" id="boiler" value="0"><br>
+    </center>
+    <br><br>
+    <center>
+        <table style="width:90%">
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b1" onchange="b1Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="b1CarryoutCheck" style="display: none;">
+                        <a id="b1Carryout" style="display: none;">Carryout</a>
+                        <input id="b1OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="b1OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="b1Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="b1OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b2" onchange="b2Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="b2CarryoutCheck" style="display: none;">
+                        <a id="b2Carryout" style="display: none;">Carryout</a>
+                        <input id="b2OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="b2OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="b2Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="b2OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b3" onchange="b3Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="b3CarryoutCheck" style="display: none;">
+                        <a id="b3Carryout" style="display: none;">Carryout</a>
+                        <input id="b3OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="b3OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="b3Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="b3OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b4" onchange="b4Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="b4CarryoutCheck" style="display: none;">
+                        <a id="b4Carryout" style="display: none;">Carryout</a>
+                        <input id="b4OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="b4OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="b4Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="b4OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b5" onchange="b5Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="b5CarryoutCheck" style="display: none;">
+                        <a id="b5Carryout" style="display: none;">Carryout</a>
+                        <input id="b5OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="b5OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="b5Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="b5OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b6" onchange="b6Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="b6CarryoutCheck" style="display: none;">
+                        <a id="b6Carryout" style="display: none;">Carryout</a>
+                        <input id="b6OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="b6OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="b6Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="b6OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Breakfast
+                    <br>
+                    <select id="b7" onchange="b7Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="b7CarryoutCheck" style="display: none;">
+                        <a id="b7Carryout" style="display: none;">Carryout</a>
+                        <input id="b7OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="b7OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="b7Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="b7OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l1" onchange="l1Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="l1CarryoutCheck" style="display: none;">
+                        <a id="l1Carryout" style="display: none;">Carryout</a>
+                        <input id="l1OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="l1OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="l1Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="l1OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l2" onchange="l2Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="l2CarryoutCheck" style="display: none;">
+                        <a id="l2Carryout" style="display: none;">Carryout</a>
+                        <input id="l2OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="l2OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="l2Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="l2OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l3" onchange="l3Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="l3CarryoutCheck" style="display: none;">
+                        <a id="l3Carryout" style="display: none;">Carryout</a>
+                        <input id="l3OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="l3OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="l3Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="l3OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l4" onchange="l4Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="l4CarryoutCheck" style="display: none;">
+                        <a id="l4Carryout" style="display: none;">Carryout</a>
+                        <input id="l4OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="l4OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="l4Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="l4OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l5" onchange="l5Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="l5CarryoutCheck" style="display: none;">
+                        <a id="l5Carryout" style="display: none;">Carryout</a>
+                        <input id="l5OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="l5OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="l5Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="l5OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l6" onchange="l6Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="l6CarryoutCheck" style="display: none;">
+                        <a id="l6Carryout" style="display: none;">Carryout</a>
+                        <input id="l6OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="l6OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="l6Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="l6OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Lunch
+                    <br>
+                    <select id="l7" onchange="l7Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="l7CarryoutCheck" style="display: none;">
+                        <a id="l7Carryout" style="display: none;">Carryout</a>
+                        <input id="l7OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="l7OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="l7Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="l7OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d1" onchange="d1Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="d1CarryoutCheck" style="display: none;">
+                        <a id="d1Carryout" style="display: none;">Carryout</a>
+                        <input id="d1OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="d1OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="d1Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="d1OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d2" onchange="d2Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="d2CarryoutCheck" style="display: none;">
+                        <a id="d2Carryout" style="display: none;">Carryout</a>
+                        <input id="d2OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="d2OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="d2Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="d2OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d3" onchange="d3Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="d3CarryoutCheck" style="display: none;">
+                        <a id="d3Carryout" style="display: none;">Carryout</a>
+                        <input id="d3OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="d3OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="d3Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="d3OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d4" onchange="d4Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="d4CarryoutCheck" style="display: none;">
+                        <a id="d4Carryout" style="display: none;">Carryout</a>
+                        <input id="d4OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="d4OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="d4Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="d4OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d5" onchange="d5Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="d5CarryoutCheck" style="display: none;">
+                        <a id="d5Carryout" style="display: none;">Carryout</a>
+                        <input id="d5OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="d5OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="d5Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="d5OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d6" onchange="d6Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="d6CarryoutCheck" style="display: none;">
+                        <a id="d6Carryout" style="display: none;">Carryout</a>
+                        <input id="d6OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="d6OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="d6Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="d6OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+                <td>
+                    Dinner
+                    <br>
+                    <select id="d7" onchange="d7Changed();">
+                        <option value="Skip">Skip</option>
+                        <option value="Off-Campus">Off-Campus</option>
+                        <option value="Home Cooked">Home Cooked</option>
+                        <option value="FAR">FAR</option>
+                        <option value="IKE">IKE</option>
+                        <option value="ISR">ISR</option>
+                        <option value="LAR">LAR</option>
+                        <option value="PAR">PAR</option>
+                        <option value="57 North">57 North</option>
+                        <option value="The Caffeinator">The Caffeinator</option>
+                        <option value="InfiniTEA">InfiniTEA</option>
+                        <option value="TerraByte">TerraByte</option>
+                        <option value="Urbana South Market">Urbana South Market</option>
+                        <option value="Good2Go Food Truck">Good2Go Food Truck</option>
+                        <option value="Other">Other</option>
+
+                        <input type="checkbox" id="d7CarryoutCheck" style="display: none;">
+                        <a id="d7Carryout" style="display: none;">Carryout</a>
+                        <input id="d7OnTheGoCheck" type="checkbox" style="display: none;">
+                        <a id="d7OnTheGo" style="display: none;">On-the-GO!</a>
+                        <a id="d7Other" style="display: none;">Where Did You Eat?</a>
+                        <input id="d7OtherInput" type="text" style="display: none;">
+                    </select>
+                </td>
+            </tr>
+          </table>
+          <br>
+          <button onClick="window.print()">Save as a PDF</button>
+    </center>
+</div>
+<script>
+</script>
+    <div class="bg"></div>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</html>

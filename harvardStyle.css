@@ -1,0 +1,104 @@
+
+body {
+    font-size: 20px;
+    color: white;
+    background: #000000;
+    margin:0;
+}
+
+button {
+    width:200px;
+    height:50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    border-width: 5px;
+    color: #000;
+    border-color: #ceb88893;
+    font-size: large;
+}
+
+input[type=text]{
+    width:200px;
+    margin-top: 10px;
+    height:20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+table, th, td {
+    border:1px solid rgb(255, 255, 255);
+}
+
+td {
+    height: 50px;
+}
+
+select {
+    width: 100%;
+    height:50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.college {
+    width: 20%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    background: transparent !important;
+}
+
+.bg {
+    animation:slide 45s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #A51C30 50%, #8C8179 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.9;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+}
+
+
+.content {
+    background-color:rgba(1,1,1,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(1,1,1,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+  

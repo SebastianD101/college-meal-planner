@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>UCLA Meal Planner</title>
+    <title>Harvard Meal Planner</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="uclaStyle.css">
+    <link rel="stylesheet" href="harvardStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
 </head>
 <div id="square"></div>
@@ -13,13 +13,13 @@
     <br>
     <center>
         <select class="college" onchange="collegeChanged();">
-            <option value="UCLA" style="color: #F2A900; background-color: #2D68C4;">UCLA</option>
             <option value="Harvard" style="color: #FFFFFF; background-color: #A51C30; text-align: center;">Harvard</option>
-            <option value="Purdue" style="color: #CEB888; background-color: #000;">Purdue</option>
-            <option value="UIUC" style="color: #E84A27; background-color: #13294B;">UIUC</option>
+            <option value="Purdue" style="color: #CEB888; background-color: #000; text-align: center;">Purdue</option>
+            <option value="UCLA" style="color: #F2A900; background-color: #2D68C4; text-align: center;">UCLA</option>
+            <option value="UIUC" style="color: #E84A27; background-color: #13294B; text-align: center;">UIUC</option>
         </select>
         <h1 id="id1">Meal Planner</h1>
-
+    
     </center>
 <div class="area">
     <br>
@@ -28,19 +28,9 @@
         &#8205;
         &#8205; 
         &#8205; 
-        &#8205; 
         <input type="text" id="swipes" value="0"><br>
-        <b>Dining Dollars Used:</b>
+        <b>BoardPlus Dollars Used:</b>
         <input type="text" id="dollars" value="0"><br>
-        <b>Illini Cash Used:</b>
-        &#8205;
-        &#8205; 
-        &#8205; 
-        &#8205;
-        &#8205; 
-        &#8205;
-        &#8205;  
-        <input type="text" id="boiler" value="0"><br>
     </center>
     <br><br>
     <center>
@@ -62,17 +52,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="b1CarryoutCheck" style="display: none;">
@@ -90,17 +82,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="b2CarryoutCheck" style="display: none;">
@@ -118,17 +112,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="b3CarryoutCheck" style="display: none;">
@@ -146,17 +142,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="b4CarryoutCheck" style="display: none;">
@@ -174,17 +172,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="b5CarryoutCheck" style="display: none;">
@@ -202,17 +202,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="b6CarryoutCheck" style="display: none;">
@@ -230,17 +232,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="b7CarryoutCheck" style="display: none;">
@@ -260,17 +264,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="l1CarryoutCheck" style="display: none;">
@@ -288,17 +294,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="l2CarryoutCheck" style="display: none;">
@@ -316,17 +324,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="l3CarryoutCheck" style="display: none;">
@@ -344,17 +354,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="l4CarryoutCheck" style="display: none;">
@@ -372,17 +384,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="l5CarryoutCheck" style="display: none;">
@@ -400,17 +414,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="l6CarryoutCheck" style="display: none;">
@@ -428,17 +444,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="l7CarryoutCheck" style="display: none;">
@@ -458,17 +476,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="d1CarryoutCheck" style="display: none;">
@@ -486,17 +506,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="d2CarryoutCheck" style="display: none;">
@@ -514,17 +536,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="d3CarryoutCheck" style="display: none;">
@@ -542,17 +566,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="d4CarryoutCheck" style="display: none;">
@@ -570,17 +596,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="d5CarryoutCheck" style="display: none;">
@@ -598,17 +626,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="d6CarryoutCheck" style="display: none;">
@@ -626,17 +656,19 @@
                         <option value="Skip">Skip</option>
                         <option value="Off-Campus">Off-Campus</option>
                         <option value="Home Cooked">Home Cooked</option>
-                        <option value="Bruin Plate">Bruin Plate</option>
-                        <option value="Epicuria">Epicuria</option>
-                        <option value="De Neve">De Neve</option>
-                        <option value="FEAST">FEAST</option>
-                        <option value="Bruin Bowl">Bruin Bowl</option>
-                        <option value="Bruin Cafe">Bruin Cafe</option>
-                        <option value="Cafw 1919">Cafe 1919</option>
-                        <option value="The Drey">The Drey</option>
-                        <option value="Rendezvous">Rendezvous</option>
-                        <option value="The Study">The Study</option>
-                        <option value="MyPizza">MyPizza</option>
+                        <option value="Barker">Barker</option>
+                        <option value="Bauer">Bauer</option>
+                        <option value="Cronkhite">Cronkhite</option>
+                        <option value="GSAS Commons">GSAS Commons</option>
+                        <option value="HDS Commons">HDS Commons</option>
+                        <option value="HKS">HKS</option>
+                        <option value="HLS Harkness">HLS Harkness</option>
+                        <option value="HLS Pub">HLS Pub</option>
+                        <option value="LISE">LISE</option>
+                        <option value="Lamont">Lamont</option>
+                        <option value="Northwest">Northwest</option>
+                        <option value="SEC">SEC</option>
+                        <option value="Sebastian's">Sebastian's</option>
                         <option value="Other">Other</option>
 
                         <input type="checkbox" id="d7CarryoutCheck" style="display: none;">
@@ -656,5 +688,6 @@
 <script>
 </script>
     <div class="bg"></div>
+    <div class="bg bg3"></div>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 </html>

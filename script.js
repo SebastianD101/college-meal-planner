@@ -7,7 +7,10 @@ function collegeChanged() {
     } 
     if (event.target.value == "UCLA") {
         window.location.href = "ucla.html";
-    } 
+    }
+    if (event.target.value == "Harvard") {
+        window.location.href = "harvard.html";
+    }  
 }
 
 function b1Changed() {
@@ -40,6 +43,8 @@ function b1Changed() {
         document.getElementById("b1CarryoutCheck").style.display = "none";
         document.getElementById("b1OnTheGo").style.display = "none";
         document.getElementById("b1OnTheGoCheck").style.display = "none";
+        document.getElementById("b1Other").style.display = "none";
+        document.getElementById("b1OtherInput").style.display = "none";
     }
 }
 
@@ -73,6 +78,8 @@ function b2Changed() {
         document.getElementById("b2CarryoutCheck").style.display = "none";
         document.getElementById("b2OnTheGo").style.display = "none";
         document.getElementById("b2OnTheGoCheck").style.display = "none";
+        document.getElementById("b2Other").style.display = "none";
+        document.getElementById("b2OtherInput").style.display = "none";
     }
 }
 
@@ -106,6 +113,8 @@ function b3Changed() {
         document.getElementById("b3CarryoutCheck").style.display = "none";
         document.getElementById("b3OnTheGo").style.display = "none";
         document.getElementById("b3OnTheGoCheck").style.display = "none";
+        document.getElementById("b3Other").style.display = "none";
+        document.getElementById("b3OtherInput").style.display = "none";
     }
 }
 
@@ -139,6 +148,8 @@ function b4Changed() {
         document.getElementById("b4CarryoutCheck").style.display = "none";
         document.getElementById("b4OnTheGo").style.display = "none";
         document.getElementById("b4OnTheGoCheck").style.display = "none";
+        document.getElementById("b4Other").style.display = "none";
+        document.getElementById("b4OtherInput").style.display = "none";
     }
 }
 
@@ -172,6 +183,8 @@ function b5Changed() {
         document.getElementById("b5CarryoutCheck").style.display = "none";
         document.getElementById("b5OnTheGo").style.display = "none";
         document.getElementById("b5OnTheGoCheck").style.display = "none";
+        document.getElementById("b5Other").style.display = "none";
+        document.getElementById("b5OtherInput").style.display = "none";
     }
 }
 
@@ -205,6 +218,8 @@ function b6Changed() {
         document.getElementById("b6CarryoutCheck").style.display = "none";
         document.getElementById("b6OnTheGo").style.display = "none";
         document.getElementById("b6OnTheGoCheck").style.display = "none";
+        document.getElementById("b6Other").style.display = "none";
+        document.getElementById("b6OtherInput").style.display = "none";
     }
 }
 
@@ -238,6 +253,8 @@ function b7Changed() {
         document.getElementById("b7CarryoutCheck").style.display = "none";
         document.getElementById("b7OnTheGo").style.display = "none";
         document.getElementById("b7OnTheGoCheck").style.display = "none";
+        document.getElementById("b7Other").style.display = "none";
+        document.getElementById("b7OtherInput").style.display = "none";
     }
 }
 
@@ -271,6 +288,8 @@ function l1Changed() {
         document.getElementById("l1CarryoutCheck").style.display = "none";
         document.getElementById("l1OnTheGo").style.display = "none";
         document.getElementById("l1OnTheGoCheck").style.display = "none";
+        document.getElementById("l1Other").style.display = "none";
+        document.getElementById("l1OtherInput").style.display = "none";
     }
 }
 
@@ -304,6 +323,8 @@ function l2Changed() {
         document.getElementById("l2CarryoutCheck").style.display = "none";
         document.getElementById("l2OnTheGo").style.display = "none";
         document.getElementById("l2OnTheGoCheck").style.display = "none";
+        document.getElementById("l2Other").style.display = "none";
+        document.getElementById("l2OtherInput").style.display = "none";
     }
 }
 
@@ -337,6 +358,8 @@ function l3Changed() {
         document.getElementById("l3CarryoutCheck").style.display = "none";
         document.getElementById("l3OnTheGo").style.display = "none";
         document.getElementById("l3OnTheGoCheck").style.display = "none";
+        document.getElementById("l3Other").style.display = "none";
+        document.getElementById("l3OtherInput").style.display = "none";
     }
 }
 
@@ -370,6 +393,8 @@ function l4Changed() {
         document.getElementById("l4CarryoutCheck").style.display = "none";
         document.getElementById("l4OnTheGo").style.display = "none";
         document.getElementById("l4OnTheGoCheck").style.display = "none";
+        document.getElementById("l4Other").style.display = "none";
+        document.getElementById("l4OtherInput").style.display = "none";
     }
 }
 
@@ -403,6 +428,8 @@ function l5Changed() {
         document.getElementById("l5CarryoutCheck").style.display = "none";
         document.getElementById("l5OnTheGo").style.display = "none";
         document.getElementById("l5OnTheGoCheck").style.display = "none";
+        document.getElementById("l5Other").style.display = "none";
+        document.getElementById("l5OtherInput").style.display = "none";
     }
 }
 
@@ -436,6 +463,8 @@ function l6Changed() {
         document.getElementById("l6CarryoutCheck").style.display = "none";
         document.getElementById("l6OnTheGo").style.display = "none";
         document.getElementById("l6OnTheGoCheck").style.display = "none";
+        document.getElementById("l6Other").style.display = "none";
+        document.getElementById("l6OtherInput").style.display = "none";
     }
 }
 
@@ -469,6 +498,8 @@ function l7Changed() {
         document.getElementById("l7CarryoutCheck").style.display = "none";
         document.getElementById("l7OnTheGo").style.display = "none";
         document.getElementById("l7OnTheGoCheck").style.display = "none";
+        document.getElementById("l7Other").style.display = "none";
+        document.getElementById("l7OtherInput").style.display = "none";
     }
 }
 
@@ -502,6 +533,8 @@ function d1Changed() {
         document.getElementById("d1CarryoutCheck").style.display = "none";
         document.getElementById("d1OnTheGo").style.display = "none";
         document.getElementById("d1OnTheGoCheck").style.display = "none";
+        document.getElementById("d1Other").style.display = "none";
+        document.getElementById("d1OtherInput").style.display = "none";
     }
 }
 
@@ -535,6 +568,8 @@ function d2Changed() {
         document.getElementById("d2CarryoutCheck").style.display = "none";
         document.getElementById("d2OnTheGo").style.display = "none";
         document.getElementById("d2OnTheGoCheck").style.display = "none";
+        document.getElementById("d2Other").style.display = "none";
+        document.getElementById("d2OtherInput").style.display = "none";
     }
 }
 
@@ -568,6 +603,8 @@ function d3Changed() {
         document.getElementById("d3CarryoutCheck").style.display = "none";
         document.getElementById("d3OnTheGo").style.display = "none";
         document.getElementById("d3OnTheGoCheck").style.display = "none";
+        document.getElementById("d3Other").style.display = "none";
+        document.getElementById("d3OtherInput").style.display = "none";
     }
 }
 
@@ -601,6 +638,8 @@ function d4Changed() {
         document.getElementById("d4CarryoutCheck").style.display = "none";
         document.getElementById("d4OnTheGo").style.display = "none";
         document.getElementById("d4OnTheGoCheck").style.display = "none";
+        document.getElementById("d4Other").style.display = "none";
+        document.getElementById("d4OtherInput").style.display = "none";
     }
 }
 
@@ -634,6 +673,8 @@ function d5Changed() {
         document.getElementById("d5CarryoutCheck").style.display = "none";
         document.getElementById("d5OnTheGo").style.display = "none";
         document.getElementById("d5OnTheGoCheck").style.display = "none";
+        document.getElementById("d5Other").style.display = "none";
+        document.getElementById("d5OtherInput").style.display = "none";
     }
 }
 
@@ -667,6 +708,8 @@ function d6Changed() {
         document.getElementById("d6CarryoutCheck").style.display = "none";
         document.getElementById("d6OnTheGo").style.display = "none";
         document.getElementById("d6OnTheGoCheck").style.display = "none";
+        document.getElementById("d6Other").style.display = "none";
+        document.getElementById("d6OtherInput").style.display = "none";
     }
 }
 
@@ -700,5 +743,7 @@ function d7Changed() {
         document.getElementById("d7CarryoutCheck").style.display = "none";
         document.getElementById("d7OnTheGo").style.display = "none";
         document.getElementById("d7OnTheGoCheck").style.display = "none";
+        document.getElementById("d7Other").style.display = "none";
+        document.getElementById("d7OtherInput").style.display = "none";
     }
 }
